@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootAbout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/tvAboutTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="About This App"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDevName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Developer: "
+        app:layout_constraintTop_toBottomOf="@id/tvAboutTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStudentNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Student No: "
+        app:layout_constraintTop_toBottomOf="@id/tvDevName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvProgramme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Programme: "
+        app:layout_constraintTop_toBottomOf="@id/tvStudentNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvWebsite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/yourusername/yourrepo"
+        android:autoLink="web"
+        android:textColorLink="@color/brandPrimary"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@id/tvProgramme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvCopyright"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="© 2025 MARA University of Technology / Nur Wafiqah Mohd Fauzi. All rights reserved."
+        app:layout_constraintTop_toBottomOf="@id/tvWebsite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
